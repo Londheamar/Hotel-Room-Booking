@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-image: url(../bg/bg1.jpg);
+    background-size: cover;
+}
+
+.logo {
+    background: blacks;
+    width: 50%;
+}
+
+.nevbar {
+    width: 100%;
+    height: 50px;
+    background: url(../icon/top-nav-bg.png);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li {
+    float: left
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: turquoise;
+}
+
+.active {
+    background-color: steelblue;
+}
+
+.room {
+    margin: 30px 130px;
+    width: 90%;
+}
+
+.room img {
+    height: 300px;
+    width: 475px;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: 3s;
+}
+
+.room img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.roomdetail {
+    width: 30%;
+    height: 550px;
+    margin: 10px 20px;
+    padding: 10px;
+    float: left;
+}
+
+h1 {
+    font-family: 'Barlow';
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.room h1:hover {
+    color: skyblue;
+    background-color: black;
+}
+
+.room p {
+    margin: auto 100px;
+    color: white;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.roomdetail button {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: red;
+    margin: auto 50px;
+    border-radius: 20px;
+    text-align: center;
+    background: pink;
+    transition: 1s;
+    width: 80%;
+}
+
+.roomdetail button:hover {
+    border-color: yellow;
+    background: skyblue;
+    color: red;
+    transform: scale(1.2);
+    box-Shadow: 5px 5px 10px black;
+}
+
+input[type=date],
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #48d1cc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4682b4;
+}
+
+.heading-reservform {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media screen and(max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
